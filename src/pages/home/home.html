@@ -1,14 +1,21 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      CV
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="cards-bg">
+
+    <ion-card>
+      <!-- <ion-card-header>Ionic Templates</ion-card-header> -->
+          <ion-list>
+            <button ion-item (click)="bio()"><ion-icon name='person' item-start></ion-icon><small>Bio</small></button>
+            <button ion-item (click)="edu()"><ion-icon name='paper' item-start></ion-icon><small>Education</small></button>
+            <button ion-item (click)="we()"><ion-icon name='briefcase' item-start></ion-icon><small>Working Experience</small></button>
+            <button ion-item><ion-icon name='game-controller-a' item-start></ion-icon><small>Skills & Knowledge</small></button>
+          </ion-list>
+    </ion-card>
+   
 </ion-content>

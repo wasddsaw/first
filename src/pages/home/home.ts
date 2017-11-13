@@ -10,5 +10,17 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+  bio()
+  {
+    this.navCtrl.push('BioPage');
+  }
+  edu()
+  {
+    this.navCtrl.push('EduPage');
+  }
+  we()
+  {
+    this.navCtrl.push('WePage');
+  }
 
 }
